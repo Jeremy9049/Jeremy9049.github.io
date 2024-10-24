@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Simhon - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left side for main content */
+        .content {
+            flex: 3;
+            padding: 20px;
+            max-width: 70%; /* Prevents text from extending too far */
+            overflow: auto;
+        }
+
+        /* Right side for navigation links */
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: right;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+        }
+
+        /* Style for the name and tagline */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for navigation */
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hide sections by default */
+        section {
+            display: none;
+        }
+
+        /* Show the selected section */
+        section.active {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content area -->
+    <div class="content">
+        <h1>Jeremy Simhon</h1>
+        <p class="tagline">Who am I and what is my purpose and ambitions? Who do I seek to be? What do I have to offer?</p>
+
+        <!-- Sections, each wrapped in a section tag -->
+        <section id="welcome" class="active">
+            <h2>Welcome</h2>
+            <p>Welcome to my personal website! Here, you’ll find information about my projects, professional work, and personal hobbies. I hope you enjoy learning more about me and my journey!</p>
+            <img src="Jeremy.Simhon_Headshot05282024.jpeg" alt="Jeremy Simhon Welcome">
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, my name is Jeremy Simhon and I am a student attending Rutgers University New Brunswick scheduled to graduate by May 2025 and hoping to find an entry level analyst job as well as hoping to get the most out of my senior year and my college experience as a whole before then.</p>
+
+            <h3>Biography</h3>
+            <p>Hello, my name is Jeremy Simhon and I am a senior at Rutgers University New Brunswick studying Business Analytics Information Technology and on a path to becoming a business analyst within the tech or retail industry. I am 21 years old and I live in Bergen County, NJ. Some things that I enjoy doing are biking, weightlifting, listening to music, stargazing, going to concerts, sports, boogie boarding, photography, cars, politics, philosophy, astronomy, Nintendo games especially Splatoon 3 which is my all-time favorite, and Chess I also find interesting. I am very much into fitness and I find pride in living a healthy lifestyle to feel the best that I possibly can and contribute to self-improvement.</p>
+            <img src="IMG_6740.JPG" alt="Jeremy Simhon About">
+        </section>
+
+        <section id="things-to-improve">
+            <h2>Things I Want to Learn/Improve</h2>
+            <p>Some things that I would like to work on are my time management skills, reliability, consistency and I also want to work more on self-control. Some skills that I would like to pick up are cooking, driving manual, and surfing. I also want to travel to more places with my girlfriend and venture outside of the state that I live in more. I would also like to watch more movies and TV shows since I usually am on social media so I don’t have a lot of exposure to cinema.</p>
+            <img src="download (1).jpg" alt="Improvement">
+        </section>
+
+        <section id="goals-aspirations">
+            <h2>Goals/Aspirations</h2>
+            <p>My most immediate goal right now is landing a full-time entry-level analyst position by the latest during the Summer time but I would like to preferably have a role lined up before I graduate in May. I hope to see myself in the next 5 years pursuing either Data Science or Data Analytics and trying to advance my career goals forward by either getting promoted or getting a raise. I would like to be well acquainted with the leaders of the company as well as my coworkers in order to foster a friendly work environment and make it easier for me to climb the ladder.  I would hope that I am passionate about whatever work that I am doing and I would want for me to enjoy it, be happy and fulfilling, and at the same time receive an adequate salary for the work. I would also want to be moved-in with my girlfriend somewhere in New Jersey or potentially elsewhere depending on where our job sites are located. I want whatever I end up doing to be something that I am proud of and makes me feel accomplished to tell people about. I want it to be a career that allows me to bring my best skills to the forefront and lets me leverage my ability to connect with people and take a leadership role. I would want it to be a mutually beneficial exchange where I am bettering the company and the company is bettering me in the process, and I can feel a sense of belonging and purpose in my employment. I do the best when I ideally am a part of a supportive environment where people are not afraid to ask questions and where everyone’s strong suits are being fully taken advantage of.
+
+            </p>
+            <img src="download.jpg" alt="Goals">
+        </section>
+
+        <section id="values">
+            <h2>Values</h2>
+            <p>I am driven by a hard work ethic and a desire for success. I want to make a real-world impact with the work that I do in order to advance society forward. I strive to be the best version of myself and to better those around me.  I never want to be known as someone who would back down from a challenge no matter how difficult or improbable it may seem to be. I also would like to be someone who is reliable and that you can count on for achieving a task. I am motivated by both my own passion as well as those around me who are rooting for my success such as my loved ones. I also promise to stay true to my moral compass when it comes to the corporate world and I pledge not to act wrongly even if it were for the benefit of my company, and even if I was receiving peer pressure from those around me to give in. I would resist the urge to act immorally because not only would I most likely get caught eventually whether it be from a whistleblower or from third party investigators, but it’s just wrong to do from an ethical perspective and it therefore is never warranted. It doesn’t matter to me even if I were the only person not complying, I would still stick to acting morally because it is the right thing to do and aligns most with my values as a human being.</p>
+            <img src="morals-7932609_1280.webp" alt="Values"> 
+        </section>
+
+        <section id="fun-facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>My ethnicity is a mix of French and Egyptian, and my religion is Jewish.</li>
+                <li>I have 2 sisters, both of which were/are a part of Rutgers, and I happen to be the middle child.</li>
+                <li>I have a dog and a bird.</li>
+                <li>I was born in New York City.</li>
+                <li>My favorite food is hoisin chicken or steak.</li>
+                <li>My favorite sauce on either is teriyaki.</li>
+            </ul>
+            <img src="download.png" alt="Fun Facts"> 
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <embed src="Jeremy Simhon New Resume.pdf" width="100%" height="600px" type="application/pdf">
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <h3>Extern for Phillies via MBS Externship Exchange (May 2024 - August 2024)</h3>
+            <p>I led an in-depth analysis of purchasing patterns across eight retail locations within the Phillies ballpark. My primary responsibility was to examine consumer buying behavior on a day-by-day basis, identifying trends and variations in purchasing activity.  I focused on two key metrics: the ratio of total buyers to total stadium attendance and the proportion of buyers purchasing City Connect merchandise relative to overall retail sales. Leveraging these insights, I created meaningful visualizations to highlight trends and developed actionable recommendations aimed at helping the Phillies retail team optimize their marketing strategies and boost City Connect merchandise sales. My team was also awarded the best lightning talk presentation award for the final handoff presentation which was voted on amongst the other participants apart of the program who were told to agree to vote on who they thought delivered the best overall handoff presentation.
+            </p>
+            <img src="1727290764030.jpg" alt="Phillies Project Image">
+
+            <h3>Student Data Analyst for Data Analytics Bootcamp via Upright Education (June 2024 - October 2024)</h3>
+            <p>Led the development of a customer segmentation model for an automobile company, leveraging k-means clustering to identify distinct customer groups based on demographic and behavioral data. I also utilized SQL for data cleaning and aggregation, followed by exploratory data analysis (EDA) in Python to identify key trends in features such as age, spending score, profession, and family size. Designed and implemented segmentation logic, resulting in four customer segments.Additionally, I detailed customer profiles and used Tableau to create visualizations that communicated findings to stakeholders, including pie charts, bar graphs, and heatmaps comparing key features across segments. Recommended targeted marketing and outreach strategies for each segment, focusing on personalized communication channels such as social media, direct mail, and email marketing. These strategies aimed to optimize engagement and drive conversions by aligning product offerings with customer preferences.
+            </p>
+            <img src="Screenshot 2024-10-21 171110.png" alt="Bootcamp Project Image">
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you’d like to get in touch, feel free to reach out via email, phone number, LinkedIn, or GitHub.</p>
+            <p>Email: jeremy.simhon@gmail.com<br>
+            <p>Phone Number: 201-647-1985<br>
+            LinkedIn: <a href="https://www.linkedin.com/in/jeremy-simhon-6a8636239">www.linkedin.com/in/jeremy-simhon-6a8636239</a><br>
+            GitHub: <a href="https://Jeremy9049.github.io">Jeremy9049.github.io</a></p>
+            <img src="download (2).jpg" alt="Contact"> 
+        </section>
+    </div>
+
+    <!-- Sidebar navigation links -->
+    <div class="sidebar">
+        <a href="#welcome" onclick="showSection('welcome')">Welcome</a>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#things-to-improve" onclick="showSection('things-to-improve')">Things I Want to Learn/Improve</a>
+        <a href="#goals-aspirations" onclick="showSection('goals-aspirations')">Goals/Aspirations</a>
+        <a href="#values" onclick="showSection('values')">Values</a>
+        <a href="#fun-facts" onclick="showSection('fun-facts')">Fun Facts</a>
+        <a href="#resume" onclick="showSection('resume')">Resume</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#contact" onclick="showSection('contact')">Contact Information</a>
+    </div>
+
+    <script>
+        // Function to switch between sections
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</
+
+

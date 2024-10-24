@@ -1,15 +1,53 @@
-.height-Input{
-
-
-}
-.weight-Input{
-
-
-    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.submit-button{
-background-color: ;
+/* Left side for main content */
+.content {
+    flex: 3;
+    padding: 20px;
+}
 
+/* Right side for navigation links */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: right;
+}
 
+/* Style for the name and tagline */
+h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Styling for navigation */
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Hide sections by default */
+section {
+    display: none;
+}
+
+/* Show the selected section */
+section.active {
+    display: block;
 }

@@ -2,94 +2,47 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>BMI Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeremy Simhon - Personal Website</title>
+        <link rel="stylesheet" href="C:\Users\jerem\mywebproject\PersonalWebsite\websitestyles.css">
     </head>
     <body>
-        <input type="text" id="heightInput" placeholder="Enter your height (inches)">
-        <input type="text" id="weightInput" placeholder="Enter your weight (pounds)">
-        <button id="submitButton">Submit</button>
-        <p id="output"></p>
-        <p id="errorMessage" style="color: red;"></p> <!-- Error message for empty fields -->
-        
-        <script>
-            const heightInput = document.getElementById('heightInput');
-            const weightInput = document.getElementById('weightInput');
-            const submitButton = document.getElementById('submitButton');
-            const outputParagraph = document.getElementById('output');    
-            const errorMessage = document.getElementById('errorMessage');
+        <!-- Main content area -->
+    <div class="content">
+        <h1>Jeremy Simhon</h1>
+        <p class="tagline">Personal website showcasing my projects and hobbies</p>
 
-            function displayBMI() {
-                const height = heightInput.value;
-                const weight = weightInput.value;
+        <!-- Sections, each wrapped in a section tag -->
+        <section id="welcome" class="active">
+            <h2>Welcome</h2>
+            <p>Welcome to my personal website! Here, you’ll find information about my projects, professional work, and personal hobbies. I hope you enjoy learning more about me and my journey.</p>
+        </section>
 
-                // Ensure both height and weight inputs are filled
-                if (height && weight) {
-                    const BMI = (weight * 703) / Math.pow(height, 2);
-                    
-                    // Only set textContent if the outputParagraph is properly selected
-                    if (outputParagraph) {
-                        outputParagraph.textContent = `Your BMI is: ${BMI.toFixed(2)}`;
-                    }
-                    
-                    // Clear error message if there is any
-                    if (errorMessage) {
-                        errorMessage.textContent = "";
-                    }
-                } else {
-                    // Clear BMI output
-                    if (outputParagraph) {
-                        outputParagraph.textContent = "";
-                    }
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Jeremy Simhon. I’m passionate about data science, analytics, and customer segmentation. I have led several projects involving the use of data to develop targeted marketing strategies. In my spare time, I enjoy exploring new technologies, reading about AI advancements, and spending time outdoors.</p>
+        </section>
 
-                    // Show error message if both fields are not filled
-                    if (errorMessage) {
-                        errorMessage.textContent = "Please fill in height and weight fields.";
-                    }
-                }
-            }   
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>One of my key projects was developing a customer segmentation model for an automobile company using k-means clustering. This project helped optimize their marketing strategies and improve customer engagement. Additionally, I’ve worked on fraud detection systems and e-commerce analytics projects.</p>
+        </section>
 
-            // Event listener for the submit button
-            submitButton.addEventListener('click', displayBMI);
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you’d like to get in touch, feel free to reach out via email at jeremy.simhon@example.com or connect with me on LinkedIn.</p>
+        </section>
+    </div>
 
-            // Function to handle Enter key press and focus behavior
-            function handleKeyPress(event) {
-                if (event.key === 'Enter') {
-                    event.preventDefault(); // Prevent default behavior of Enter key
+    <!-- Sidebar navigation links -->
+    <div class="sidebar">
+        <a href="#welcome" onclick="showSection('welcome')">Welcome</a>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </div>
+    
 
-                    const height = heightInput.value;
-                    const weight = weightInput.value;
-
-                    // If both fields are empty, display an error message and focus on the height input
-                    if (!height && !weight) {
-                        if (errorMessage) {
-                            errorMessage.textContent = "Please fill in height and weight fields.";
-                        }
-                        heightInput.focus(); // Focus on the first input (height)
-                    }
-                    // If height is empty but weight is filled, focus on heightInput
-                    else if (!height && weight) {
-                        if (errorMessage) {
-                            errorMessage.textContent = ""; // Clear previous error
-                        }
-                        heightInput.focus(); // Move focus to height input
-                    }
-                    // If weight is empty but height is filled, focus on weightInput
-                    else if (height && !weight) {
-                        if (errorMessage) {
-                            errorMessage.textContent = ""; // Clear previous error
-                        }
-                        weightInput.focus(); // Move focus to weight input
-                    }
-                    // If both are filled, calculate BMI
-                    else {
-                        displayBMI();
-                    }
-                }
-            }
-
-            // Add event listeners to both input fields
-            heightInput.addEventListener('keydown', handleKeyPress);
-            weightInput.addEventListener('keydown', handleKeyPress);
-        </script>
+    <script src="C:\Users\jerem\mywebproject\PersonalWebsite\websitescripts.js"></script>
     </body>
 </html>
